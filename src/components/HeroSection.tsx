@@ -13,8 +13,16 @@ const HeroSection = () => {
   return (
     <section 
       id="home" 
-      className="relative min-h-screen flex items-center justify-center hero-gradient overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      style={{
+        backgroundImage: "url('https://source.unsplash.com/random/1920x1080/?musician,stage')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat"
+      }}
     >
+      <div className="absolute inset-0 bg-musician-dark bg-opacity-75 hero-gradient"></div>
+      
       <ParallaxContainer speed={0.2} className="absolute inset-0 z-0">
         <div className="absolute top-0 left-0 right-0 h-full w-full bg-musician-green opacity-5"></div>
       </ParallaxContainer>

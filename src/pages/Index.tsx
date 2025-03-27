@@ -1,10 +1,11 @@
 
-import React, { useEffect } from "react";
-import { useInView } from "react-intersection-observer";
+import React from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import MusicSection from "@/components/MusicSection";
+import LivePerformancesSection from "@/components/LivePerformancesSection";
+import ProductionSection from "@/components/ProductionSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
@@ -15,6 +16,8 @@ const Index = () => {
       <HeroSection />
       <AboutSection />
       <MusicSection />
+      <LivePerformancesSection />
+      <ProductionSection />
       <ContactSection />
       <Footer />
     </div>
